@@ -1,0 +1,169 @@
+.Footer{
+
+    &-top{
+        background-color: var(--dark);
+
+        @media (max-width:676px) {
+            margin-top: 50px;
+        }
+        & > div{
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: var(--white);
+            padding: 12px 20px;
+            & > span {
+                margin-right: 130px;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 6%;
+                @media (max-width:676px) {
+                    margin-right: 50px
+                } 
+            }
+
+            & > div {
+                margin-right: auto;
+                width: 520px;
+                color:var(--white);
+                display: flex;
+                @media (max-width:676px) {
+                    flex-direction: column;
+                    align-items: end;
+                } 
+                & > input{
+                    padding: 7px 7px 7px 10px;
+                    border: none;
+                    outline: none;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    color:var(--white);
+                    width: 75%;
+                    margin-right: 15px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    @media (max-width:676px) {
+                        margin-right: 0;
+                    } 
+                }
+
+                & > button{
+                    padding: 7px 24px;
+                    border: 1px solid var(--white);
+                    color:var(--white);
+                    outline: none;
+                    background-color: var(--dark);
+                    @media (max-width:676px) {
+                        width: 75%;
+                    } 
+                }
+
+
+            }
+
+            & > ul {
+                margin-left: 20px;
+                @media (max-width:676px) {
+                    display: none;
+                } 
+            }
+        }
+    }
+
+    &-mid {
+        background-color: var(--white);
+        padding-top: 40px;
+        > ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 30px;
+            color:var(--dark);
+
+            margin-bottom: 50px;
+            @media (max-width:767px) {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                row-gap: 30px;
+            }
+
+            & > li {
+                @media (max-width:767px) {
+                    width: 45%;
+                }
+
+                & > h3 {
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 13.44px;
+                    @media (max-width:767px) {
+                        font-size: 12px;
+                    }
+                }
+
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+                    & > li {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 34px;
+                        opacity: 0.8;
+
+                        @media (max-width:767px) {
+                            font-size: 10px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        background-color: var(--gr-white);
+        color:var(--dark);
+
+        & > div{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            & > span:first-child{
+                margin-right: 150px;
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 22px;
+
+                @media (max-width:767px) {
+                    margin-right: 40px;
+                }
+            }
+
+            & > ul {
+                margin-right: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                > li {
+                    margin-right: 8px;
+                }
+
+                > li:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            & > span:last-child{
+                font-size: 11px;
+                line-height: 22px;
+                font-weight: 500;
+                margin-left: 30px;
+
+                @media (max-width:676px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

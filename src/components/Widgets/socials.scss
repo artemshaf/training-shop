@@ -1,0 +1,11 @@
+.widgets-socials{
+    display: flex;
+    align-items: center;
+    
+    & > li {
+        margin-right: 11px;
+    }
+    & > li:last-child{
+        margin-right: 0;
+    }
+}

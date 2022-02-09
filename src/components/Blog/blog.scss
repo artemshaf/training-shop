@@ -1,0 +1,100 @@
+.Blog{
+    padding: 95px 0;
+
+    @media (max-width:676px) {
+        padding: 45px 0;
+    }
+
+    &-container{
+
+    }
+
+    & > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        & > span:first-child{
+            font-size: 22px;
+            font-weight: 600;
+
+            @media (max-width:676px) {
+                font-size: 14px;
+            }
+        }
+        & > span:last-child{
+            margin-left: auto;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+    & > ul {
+        display: flex;
+        column-gap: 30px;
+        justify-content: space-between;
+
+        @media (max-width:1024px) {
+            flex-wrap: wrap;
+            row-gap: 70px;
+            justify-content: center;
+        }
+
+        & > li{
+            position: relative;
+            display: flex;
+            max-width: 350px;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width:1024px) {
+                max-width: 45%;
+            }
+
+            @media (max-width:676px) {
+                &{
+                    display: none;
+                }
+                &:nth-child(1){
+                    display: block;
+                }
+                max-width: 100%;
+            }
+
+            & > img {
+                max-width: 100%;
+            }
+            & > div {
+                position: absolute;
+                bottom: -25%;
+                width: 80%;
+                background-color: var(--white);
+                padding: 25px 15px;
+                @media (max-width:676px) {
+                    padding: 10px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100%;
+                }
+                & > p:first-child {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-bottom: 12px;
+                    @media (max-width:676px) {
+                        font-size: 14px;
+                    }
+                }
+
+                & > p:last-child{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    @media (max-width:676px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
