@@ -1,4 +1,3 @@
-import React from "react";
 import Arrivals from "./Arrivals";
 import Cards from "./Cards";
 import "./clothes.scss";
@@ -6,7 +5,7 @@ import "./clothes.scss";
 const Clothes = ({sex}) => {
     let title;
 
-    if (sex === true) {
+    if (sex.toLowerCase() === 'men') {
         title = "MEN’S";
     } else {
         title = "WOMEN’S";

@@ -5,8 +5,7 @@ import socialsReducer from "./socialsSlice";
 import headerNavReducer from "./headerNavSlice";
 import bannerReducer from "./bannerSlice";
 import bannerAboutReducer from "./bannerAboutSlice";
-import menThingsReducer from "./menThingsSlice";
-import womenThingsReducer from "./womenThingsSlice";
+import thingsReducer from "./thingsSlice";
 
 
 export default configureStore({
@@ -16,7 +15,6 @@ export default configureStore({
         headerNav: headerNavReducer,
         banner: bannerReducer,
         bannerAbout: bannerAboutReducer,
-        menThings: menThingsReducer,
-        womenThings: womenThingsReducer,
+        things: thingsReducer,
     }
 });

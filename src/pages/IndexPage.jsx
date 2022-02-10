@@ -8,8 +8,8 @@ const IndexPage = () => {
     return (
         <div>
             <Promotion />
-            <Clothes sex={false} />
-            <Clothes sex={true} />
+            <Clothes sex="women" />
+            <Clothes sex="men" />
             <Seasons />
             <Subscribe />
             <Blog />
